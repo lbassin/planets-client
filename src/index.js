@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-const App = () => {
-    return <div>Hello React!</div>;
-};
-
-ReactDOM.render(<App/>, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById('app'));
+registerServiceWorker();
