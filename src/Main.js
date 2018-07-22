@@ -1,13 +1,11 @@
 import React from "react";
-import TodoPage from "./Todo/TodoPage";
 import {Route, Switch} from "react-router-dom";
-import TestPage from "./Test/TestPage";
+import PlanetsPage from "./Planets/PlanetsPage";
 
 const Main = () => (
     <main>
         <Switch>
-            <Route exact path="/" component={TodoPage}/>
-            <Route exact path="/test" component={TestPage}/>
+            <Route exact path="/" component={PlanetsPage}/>
         </Switch>
     </main>
 );
