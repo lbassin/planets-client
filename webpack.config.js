@@ -6,6 +6,9 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+    devServer: {
+        port: 8000
+    },
     module: {
         rules: [
             {
