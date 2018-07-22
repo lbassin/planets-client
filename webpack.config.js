@@ -9,6 +9,10 @@ module.exports = {
     devServer: {
         port: 8000
     },
+    entry: {
+        'app': './src/index.js',
+        'bootstrap': 'bootstrap-css-only/css/bootstrap.css'
+    },
     module: {
         rules: [
             {
