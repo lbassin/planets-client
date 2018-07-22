@@ -8,9 +8,11 @@ const Title = (props) => {
     }
 
     return (
-        <div>
-            <h1>Planetarium</h1>
-            {subTitle}
+        <div className={'row'}>
+            <div className={'col-12 text-center'}>
+                <h1>Planetarium</h1>
+                {subTitle}
+            </div>
         </div>
     );
 };
