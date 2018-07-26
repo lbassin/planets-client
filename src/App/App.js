@@ -1,12 +1,12 @@
 import React from "react";
 import {Route, Switch} from "react-router-dom";
-import TestPage from "./TestPage";
+import ListPage from "./Planets/List/ListPage";
 
 const App = () => (
     <div className={'container'}>
         <main>
             <Switch>
-                <Route exact path="/" component={TestPage}/>
+                <Route exact path="/" component={ListPage}/>
             </Switch>
         </main>
     </div>
