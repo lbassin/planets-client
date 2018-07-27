@@ -66,6 +66,12 @@ class Form extends React.Component {
             })
             .catch((error) => {
                 console.error(error.response.data);
+                const errors = this.state.errors;
+                error.response.data.forEach((error) => {
+                    errors[error.property_path] = error.message;
+                });
+
+                this.setState({errors: errors});
             });
     }
 
