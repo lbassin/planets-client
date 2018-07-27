@@ -41,7 +41,7 @@ class Form extends React.Component {
             case 'age':
             case 'population':
                 if (!value.match(/^[0-9]+$/i)) {
-                    errors[name] = name + ' should be a number granter than 0';
+                    errors[name] = name + ' should be a number greater than 0';
                 }
                 break;
 
